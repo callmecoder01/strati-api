@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_images",
+  "info": {
+    "singularName": "feature-image",
+    "pluralName": "feature-images",
+    "displayName": "FeatureImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pradesh_banners",
+  "info": {
+    "singularName": "pradesh-banner",
+    "pluralName": "pradesh-banners",
+    "displayName": "Pradesh-banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
